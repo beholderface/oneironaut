@@ -1,23 +1,46 @@
 {
   "type": "oneironaut:noosphere_type",
   "generator": {
-    "type": "minecraft:flat",
+    "type": "minecraft:noise",
     "settings": {
-      "biome": "oneironaut:noosphere_sea",
-      "lakes": false,
-      "features": true,
-      "layers": [
+      "sea_level": 0,
+      "disable_mob_generation": true,
+      "ore_veins_enabled": false,
+      "aquifers_enabled": true,
+      "legacy_random_source": false,
+      "default_block": {
+        "Name": "oneironaut:noosphere_basalt"
+      },
+      "default_fluid": {
+        "Name": "oneironaut:thought_slurry"
+      },
+      "spawn_target": {},
+      "noise": {
+        "min_y": -64,
+        "height": 256,
+        "size_horizontal": 1,
+        "size_vertical": 2
+      },
+      "noise_router": {
+        "lava": 0.0
+      },
+      "surface_rule": {
+
+      }
+    },
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
         {
-          "block": "minecraft:bedrock",
-          "height": 1
-        },
-        {
-          "block": "oneironaut:noosphere_basalt",
-          "height": 16
-        },
-        {
-          "block": "oneironaut:thought_slurry",
-          "height": 47
+          "biome": "oneironaut:noosphere_sea",
+          "parameters": {
+            "continentalness": [
+              -1.05,
+              -0.19
+            ],
+            "depth": 0.125,
+            "offset": 0.2
+          }
         }
       ]
     }
