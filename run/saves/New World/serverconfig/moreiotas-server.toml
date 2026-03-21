@@ -1,0 +1,15 @@
+
+[Spells]
+	#How large can matrices be
+	#Range: 3 ~ 512
+	maxMatrixSize = 144
+	#How long can strings be
+	#Range: 1 ~ 32768
+	maxStringLength = 1728
+	#How much dust should string/block/set cost?
+	#Range: 1.0E-4 ~ 10000.0
+	setBlockStringCost = 0.01
+	#How much dust should string/name cost?
+	#Range: 1.0E-4 ~ 10000.0
+	nameCost = 0.01
+

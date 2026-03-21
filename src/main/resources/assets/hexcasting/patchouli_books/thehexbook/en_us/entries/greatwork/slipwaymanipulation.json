@@ -1,0 +1,28 @@
+{
+  "name": "oneironaut.entry.slipwaymanipulation",
+  "category": "hexcasting:greatwork",
+  "icon": "oneironaut:spacebomb",
+  "sortnum": 5,
+  "advancement": "hexcasting:enlightenment",
+  "entry_color": "54398a",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.slipwaymanipulation.1"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:slipcharge",
+      "text": "oneironaut.page.slipwaymanipulation.2"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.slipwaymanipulation.3"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:slipwaysuppressor",
+      "text": "oneironaut.page.slipwaymanipulation.4"
+    }
+  ]
+}
