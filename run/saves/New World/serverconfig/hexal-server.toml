@@ -1,0 +1,119 @@
+
+[terrainGeneration]
+	generateSlipwayGeodes = true
+
+[miscValues]
+	#Range: 0 ~ 68719411200
+	everbookMaxSize = 67108800
+
+[miscSpells]
+	#Range: 1.0E-4 ~ 10000.0
+	fallingBlockCost = 1.5
+	#Range: 1.0E-4 ~ 10000.0
+	freezeCost = 1.0
+	#Range: 1.0E-4 ~ 10000.0
+	particlesCost = 0.002
+	#Range: 1.0E-4 ~ 10000.0
+	placeTypeCost = 0.125
+	#Range: 1.0E-4 ~ 10000.0
+	smeltCost = 0.75
+
+[wispSpells]
+	#Cost to increase the movement speed of a wisp by 1.
+	#This is the base cost, with greater increases being quadratically based on this.
+	#Range: 1.0E-4 ~ 10000.0
+	moveSpeedSetCost = 1.0
+	#Range: 1.0E-4 ~ 10000.0
+	summonTickingWispCost = 3.0
+	#Range: 1.0E-4 ~ 10000.0
+	summonProjectileWispCost = 1.7
+	#Range: 1.0E-4 ~ 10000.0
+	summonProjectileWispMinCost = 0.5
+
+[wispUpkeep]
+	#Range: 1.0E-4 ~ 10000.0
+	tickingWispUpkeepPerTick = 0.0325
+	#Range: 1.0E-4 ~ 10000.0
+	projectileWispUpkeepPerTick = 0.01625
+	#The upkeep cost of untriggered cyclic wisps is multiplied by this number.
+	#Range: 0.0 ~ 1.0
+	untriggeredWispUpkeepDiscount = 0.77
+	#Range: 1.0E-4 ~ 10000.0
+	linkUpkeepPerTick = 5.0E-4
+	#The upkeep cost of bound wisps is divided by this number.
+	#Range: 2.0 ~ 200.0
+	seonDiscountFactor = 20.0
+	#The multiplicative cost increase of wisps containing an iota of another player.
+	#Range: 1.0 ~ 200.0
+	storingPlayerCostScaleFactor = 20.0
+	#Proportion of the difference between media amounts that flows across a link per tick.
+	#Range: 0.0 ~ 0.1
+	mediaFlowRateOverLink = 0.01
+
+[linkSpells]
+	#Range: 1.0E-4 ~ 10000.0
+	linkCost = 5.0
+	#Range: 1.0E-4 ~ 10000.0
+	sendIotaCost = 0.01
+	#Range: 1.0E-4 ~ 10000.0
+	unlinkCost = 2.0
+
+[gateSpells]
+	#Range: 1.0E-4 ~ 10000.0
+	makeGateCost = 320.0
+	#Range: 1.0E-4 ~ 10000.0
+	markGateCost = 0.05
+	#Range: 1.0E-4 ~ 10000.0
+	closeGateCost = 2.5
+	#Range: 1.0E-4 ~ 10000.0
+	closeGateDistanceCostFactor = 0.1
+	#Range: 1.0 ~ 96.0
+	maxGateOffset = 32.0
+
+[itemSpells]
+	#Range: 1.0E-4 ~ 10000.0
+	bindStorageCost = 32.0
+	#Range: 1.0E-4 ~ 10000.0
+	bindTemporaryStorageCost = 0.001
+	#Range: 1.0E-4 ~ 10000.0
+	makeItemCost = 0.1
+	#Range: 1.0E-4 ~ 10000.0
+	returnItemCost = 0.1
+	#Range: 1.0E-4 ~ 10000.0
+	craftItemCost = 0.1
+	#Range: 1.0E-4 ~ 10000.0
+	tradeItemCost = 0.1
+	#Range: 1.0E-4 ~ 10000.0
+	useItemOnCost = 0.125
+	#Maximum number of items that can be returned to the world as item entities in a single OpReturnMote call.
+	#Range: 640 ~ 64000
+	maxItemsReturned = 32000
+	#Maximum number of Item Records (the things Item Iotas point at) that can be stored in a Mediafied Storage block.
+	#Range: 128 ~ 16384
+	maxRecordsInMediafiedStorage = 1023
+
+[greatSpells]
+	#Cost to consume a wisp you own,
+	#or that doesn't fight back for some other reason.
+	#Range: 1.0E-4 ~ 10000.0
+	consumeWispOwnCost = 5.0
+	#Cost to consume a wisp that fights back, this number is multiplied by
+	#the media possessed by the wisp you are attempting to consume.
+	#Range: 1.0 ~ 20.0
+	consumeWispOthersCostPerMedia = 1.5
+	#Range: 1.0E-4 ~ 10000.0
+	seonWispSetCost = 50.0
+	#Constant cost to tick a block. Always applies.
+	#Range: 1.0E-4 ~ 10000.0
+	tickConstantCost = 0.1
+	#Cost to tick a block per time that block has already been ticked.
+	#Added to the constant cost above.
+	#Range: 1.0E-4 ~ 10000.0
+	tickCostPerTicked = 0.001
+	#The inverse probability of tick randomly ticking a block.
+	#Higher numbers make random ticks less likely, lower numbers make them more likely.
+	#Range: 600 ~ 2100
+	tickRandomTickIProb = 1365
+	#Resource locations of blocks you can't accelerate.
+	accelerateDenyList = ["hexcasting:impetus_look", "create:deployer"]
+

@@ -1,0 +1,7 @@
+{
+  "type": "oneironaut:noosphere_sea_volcano",
+  "config": {
+    "mainblockid": "oneironaut:noosphere_basalt",
+    "secondaryblockid": "oneironaut:pseudoamethyst_block"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "oneironaut.entry.super_budding",
+  "category": "hexcasting:greatwork",
+  "icon": "oneironaut:super_budding",
+  "advancement": "oneironaut:enter_noosphere",
+  "sortnum": 5,
+  "entry_color": "54398a",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.super_budding.1"
+    },
+    {
+      "type": "hexcasting:brainsweep",
+      "recipe": "oneironaut:super_budding",
+      "text": "oneironaut.page.super_budding.2"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.super_budding.3"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "oneironaut:shifting_pseudoamethyst",
+      "text": "oneironaut.page.super_budding.4"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:shifting_stabilization/shifting_to_pseudo_shard",
+      "recipe2": "oneironaut:shifting_stabilization/shifting_to_dust"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:shifting_stabilization/shifting_to_normal_shard",
+      "recipe2": "oneironaut:shifting_stabilization/shifting_to_charged"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "oneironaut.page.super_budding.5"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:endless_phial",
+      "text": "oneironaut.page.super_budding.6"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "oneironaut:bottomless_trinket",
+      "text": "oneironaut.page.super_budding.7"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "oneironaut:craftbottomlesstrinket",
+      "anchor": "oneironaut:craftbottomlesstrinket",
+      "input": "list of patterns",
+      "output": "",
+      "text": "oneironaut.page.super_budding.8"
+    }
+  ]
+}
