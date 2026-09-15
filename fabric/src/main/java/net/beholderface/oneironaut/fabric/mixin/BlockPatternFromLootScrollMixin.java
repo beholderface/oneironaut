@@ -16,6 +16,6 @@ public class BlockPatternFromLootScrollMixin {
             "Lat/petrak/hexcasting/api/utils/HexUtils;isOfTag(Lnet/minecraft/registry/Registry;Lnet/minecraft/registry/RegistryKey;Lnet/minecraft/registry/tag/TagKey;)Z"
             ,remap = true), remap = false)
     private static boolean isAlsoOfThisTag(Registry<?> maybeHolder, RegistryKey<?> holder, TagKey<?> tag, Operation<Boolean> original){
-        return original.call(maybeHolder, holder, tag) && original.call(maybeHolder, holder, OneironautTags.Actions.noLootScrolls);
+        return original.call(maybeHolder, holder, tag) && !original.call(maybeHolder, holder, OneironautTags.Actions.noLootScrolls);
     }
 }
