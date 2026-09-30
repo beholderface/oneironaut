@@ -70,7 +70,7 @@ public class OneironautItemRegistry {
     public static final RegistrySupplier<ItemLibraryCard> LIBRARY_CARD = ITEMS.register("library_card", ()->new ItemLibraryCard(ONEIRONAUT_UNSTACKABLE));
     public static final RegistrySupplier<Item> RIFT_RESIDUE = ITEMS.register("rift_residue", ()->new RiftResidueItem(ONEIRONAUT_STACKABLE64, ArbitaryDeltaPigmentItem.skyColors,
             ()-> ((System.currentTimeMillis() + TimeZone.getDefault().getRawOffset()) % ArbitaryDeltaPigmentItem.irlDayInMilliseconds) / ArbitaryDeltaPigmentItem.irlDayInMilliseconds));
-
+    public static final RegistrySupplier<Item> INEFFICIENT_MEGA_PHIAL = ITEMS.register("mega_phial", ()-> new InefficientInsertionMediaStorageItem(ONEIRONAUT_UNSTACKABLE));
 
     public static final RegistrySupplier<BlockItem> PSUEDOAMETHYST_BLOCK_ITEM = ITEMS.register("pseudoamethyst_block", () -> new BlockItem(OneironautBlockRegistry.PSUEDOAMETHYST_BLOCK.get(), ONEIRONAUT_STACKABLE64));
     public static final RegistrySupplier<BlockItem> PSUEDOAMETHYST_BLOCK_INSUBSTANTIAL_ITEM = ITEMS.register("insubstantial_pseudoamethyst_block", () -> new BlockItem(OneironautBlockRegistry.PSUEDOAMETHYST_BLOCK_INSUBSTANTIAL.get(), ONEIRONAUT_STACKABLE64));
